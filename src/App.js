@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className='main-img'>
         <Navbar/>
-      {/* <Nav/> */}
+ 
       <Header/>
      
       </div>
