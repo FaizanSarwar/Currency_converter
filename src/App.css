@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+                  /* Nav bar start from here */
+.itm{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nv{
+  color: rgb(243, 243, 243) !important;
+  font-size: 18px !important;
+  margin-left: 10px;
+}
+.vl {
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 20px;
+  margin-top: 4px;
+ 
+  
+}
+.left{
+  display: flex;
+  align-items: center;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+/* start header from here */
+.main-pera{
+  font-weight: 200;
+}
+
+.main-img{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarxxPiLUZSjOPFEDzURFYEDxVZiM-KWmsCg&usqp=CAU');
+background-repeat: no-repeat;
+background-size: 100% 85%;
+
+
+
+}
+.header{
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 900;
+  color: #fff;
+}
+                 /* card start here  */
+.cardproper{
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0f5fa;
+  font-size: 20px;
+  cursor: pointer;
+  
+
+}
+.card{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  padding: 0 2% 0 2%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card-input-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-inputs{
+  display: flex;
+  margin-top: 3%;
+}
+.inputs{
+  width: 90%;
+  font-size: 28px;
+  border-radius: 10px;
+  border:1px solid gray;
+
+}
+.convertbtn{
+ margin:5% 3% 3% 0;
+ float: right;
+font-weight: 400;
+ 
+}
+
+.foot{
+  background-color: rgba(10,20,110,255);
+  width: 100%;
+}
+.footcol{
+  color: rgba(41,134,232,255);
+  list-style: none;
+  font-weight: 500;
+}
+.footcol li{
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.footname{
+  color: #fff;
+  padding: 2% 0 2% 0;
+
+}
+
+/* some code for hover effects */
+.nv:hover{
+  text-decoration: underline;
+
+}
+.cardproper li:hover{
+  text-decoration: underline;
+  font-size: 110%;
+ 
+
+}
+.footcol li:hover{
+  text-decoration: underline;
+  font-size: 110%;
+
+} 
+
+
+/* some code for responsiveness */
+
+
+ @media(max-width:1200px){
+  .footcol{
+      font-size: 85%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:992px){
+   .footcol {
+      font-size: 60%;
+  } 
+  .left{
+    display: flex;
+    font-size: 150%;
+    margin-left: 3%;
+  
+    
   }
+   .nv{
+font-size: 73% !important;
+  } 
+}
+
+@media(max-width:766px){
+  .footcol{
+      font-size: 95%;
+  }
+  .header{
+    font-size: 80% !important;
+  }
+}
+@media(max-width:575px){
+  .footcol{
+      font-size: 120%;
+      text-align: center;
+  }
+  .footcol li{
+    margin-bottom: 4%;
+  }
+  .footname{
+    padding-top: 5%;
+  }
+ 
 }
